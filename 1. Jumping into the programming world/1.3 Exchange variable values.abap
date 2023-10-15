@@ -1,11 +1,13 @@
-REPORT CREATE_VARIABLES
+REPORT EXCHANGE_VARIABLE_VALUES
 *
 ************************************************************************
-* Task: Create different variables, then add values and write them out!
+* Task: Exchange variable values then write them out!
 ************************************************************************
-* Example: Create an integer, a string, and a flag variable.
+* Example:
+* There are two variables: A = 2 and B = 5
+* Exchange them to:        A = 5 and B = 2
 *-----------------------------------------------------------------------
 * What commands do you need to learn and use?
-* - DATA, = (giving values to variables), WRITE.
+* - DATA, Assigning operator: = , WRITE.
 * If you get stuck use ABAP Keyword Documentation [ F1 ] on the command!
 *-----------------------------------------------------------------------
