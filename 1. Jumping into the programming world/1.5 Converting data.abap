@@ -8,7 +8,7 @@ REPORT CONVERTING_DATA
 *          and a string ( Somebody ) to char50 ( SOMEBODY ).	
 *-----------------------------------------------------------------------
 * What commands do you need to learn and use?
-* - DATA, CONV, WRITE.
+* - DATA, CONV, Assigning operator = , WRITE.
 * If you get stuck use ABAP Keyword Documentation [ F1 ] on the command!
 *-----------------------------------------------------------------------
 
