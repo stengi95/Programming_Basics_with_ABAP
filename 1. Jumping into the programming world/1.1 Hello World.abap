@@ -1,4 +1,4 @@
-REPORT HELLO_WORLD
+REPORT Z_HELLO_WORLD.
 *
 ************************************************************************
 * Task: Write out "Hello World!" in two ways:
