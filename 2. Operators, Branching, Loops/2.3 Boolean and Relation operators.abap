@@ -47,7 +47,7 @@ REPORT Z_BOOLEAN_AND_RELATION_OPERATORS
 * If you get stuck use ABAP Keyword Documentation [ F1 ] on the command!
 *-----------------------------------------------------------------------
 
-CONSTANTS: alphabetic TYPE string VALUE 'ABCDEFGHIJKLMNOPQRSTXYZ',
+CONSTANTS: alphabetic TYPE string VALUE 'ABCDEFGHIJKLMNOPQRSTXYZ', "you also can use sy-abcde
            numbers    TYPE string VALUE '0123456789'.
 
 DATA result TYPE string.
@@ -58,14 +58,6 @@ result = COND #( WHEN operand1 EQ operand2 THEN 'Yes' ELSE 'No').
 
 WRITE: 'Is ', operand1, 'equal', operand2, '? ', result.
 NEW-LINE.
-
-IF operand1 NE operand2.
-  result = 'Yes'.
-ELSE.
-  result = 'No'.
-ENDIF.
-
-WRITE: 'Is ', operand1, 'not equal', operand2, '? ', result, /.
 
 "Your turn! (If you get stuck, a strange but working example: result = COND #( WHEN operand1 CA numbers EQUIV operand2 BETWEEN 1 and 2 OR ( 2 LT 1 AND 5 EQ 5 )  THEN 'Yes' ELSE 'No'). WRITE result.
 

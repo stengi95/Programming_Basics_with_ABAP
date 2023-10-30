@@ -10,7 +10,7 @@ REPORT Z_BRANCHING
 *         write out: It's an intiger.
 *       - Else write out: It contains numeric and alphabetic characters.
 *      CASE:
-*       - Request a number from the user with type char5.
+*       - Request a number from the user with type char4.
 *       - After the case command check the string lenght of the parameter
 *       - WHEN its 1, write out the number and: 'is between 1 and 9.'
 *       - WHEN its 2, write out the number and: 'is between 10 and 99.'
@@ -25,7 +25,7 @@ REPORT Z_BRANCHING
 * If you get stuck use ABAP Keyword Documentation [ F1 ] on the command!
 *-----------------------------------------------------------------------
 
-CONSTANTS: alphabetic TYPE string VALUE 'ABCDEFGHIJKLMNOPQRSTXYZ',
+CONSTANTS: alphabetic TYPE string VALUE 'ABCDEFGHIJKLMNOPQRSTXYZ', "you also can use sy-abcde
            numbers    TYPE string VALUE '0123456789'.
 
 * Example syntaxes: Using current user seconds as random number
@@ -43,7 +43,7 @@ CASE sy-uzeit+5(1).
      WRITE: 'This number is even:', sy-uzeit+5(1).
 ENDCASE.
 
-* Example for strlen: variable = strlen( character_like_paramtere ).
+* Example for strlen: variable = strlen( character_like_parameter ).
 
 * Your turn!
 
