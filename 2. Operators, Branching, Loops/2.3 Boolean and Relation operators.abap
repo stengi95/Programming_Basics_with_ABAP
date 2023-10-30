@@ -11,7 +11,7 @@ REPORT Z_BOOLEAN_AND_RELATION_OPERATORS
 *-----------------------------------------------------------------------
 * What commands do you need to learn and use?
 * - CONSTANTS, DATA
-* - COND
+* - COND, NEW LINE
 * - Relation operators: ~ Equal: =, EQ
 *                       ~ Not Equal: <>, NE
 *                       ~ Less Then: <, LT
@@ -47,11 +47,27 @@ REPORT Z_BOOLEAN_AND_RELATION_OPERATORS
 * If you get stuck use ABAP Keyword Documentation [ F1 ] on the command!
 *-----------------------------------------------------------------------
 
-CONSTANTS: alphabetic TYPE string 'ABCDEFGHIJKLMNOPQRSTXYZ',
-           numbers    TYPE string '0123456789'.
+CONSTANTS: alphabetic TYPE string VALUE 'ABCDEFGHIJKLMNOPQRSTXYZ',
+           numbers    TYPE string VALUE '0123456789'.
 
-DATA result TYPE flag. "or abap_bool
+DATA result TYPE string.
 
-result = COND #( WHEN 1 EQ 1 THEN 'X' ELSE space ).
-write result.
+PARAMETERS: operand1, operand2.
+
+result = COND #( WHEN operand1 EQ operand2 THEN 'Yes' ELSE 'No').
+
+WRITE: 'Is ', operand1, 'equal', operand2, '? ', result.
+NEW-LINE.
+
+IF operand1 NE operand2.
+  result = 'Yes'.
+ELSE.
+  result = 'No'.
+ENDIF.
+
+WRITE: 'Is ', operand1, 'not equal', operand2, '? ', result, /.
+
+"Your turn! (If you get stuck, a strange but working example: result = COND #( WHEN operand1 CA numbers EQUIV operand2 BETWEEN 1 and 2 OR ( 2 LT 1 AND 5 EQ 5 )  THEN 'Yes' ELSE 'No'). WRITE result.
+
+
 
