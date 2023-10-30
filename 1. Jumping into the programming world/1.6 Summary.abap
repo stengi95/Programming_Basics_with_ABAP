@@ -20,7 +20,7 @@ REPORT SUMMARY
 * If you get stuck use ABAP Keyword Documentation [ F1 ] on the command!
 *-----------------------------------------------------------------------
 
-*Your turn!
+*Your turn! "CONV syntax example: float_variable = CONV #( integer_variable ). 
 
 WRITE 'In a parallel universe:'.
 

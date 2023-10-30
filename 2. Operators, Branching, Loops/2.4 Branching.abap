@@ -1,73 +1,52 @@
-REPORT Z_BOOLEAN_AND_RELATION_OPERATORS
+REPORT Z_BRANCHING
 *
 ************************************************************************
-* Task: Use most of Boolean and Relation Operator then write out the result!
+* Task: Use IF and Case commands to control the flow of the program:
+*      IF:
+*       - Request a data from the user without type.
+* 	- If the requsted data contains only alphabetic characters,
+*         write out: It's a string.
+*       - Else If the requested data contains only numbers,
+*         write out: It's an intiger.
+*       - Else write out: It contains numeric and alphabetic characters.
+*      CASE:
+*       - Request a number from the user with type char5.
+*       - After the case command check the string lenght of the parameter
+*       - WHEN its 1, write out the number and: 'is between 1 and 9.'
+*       - WHEN its 2, write out the number and: 'is between 10 and 99.'
+*       - WHEN its 3, write out the number and: 'is between 100 and 999.'
+*       - WHEN its 4, write out the number and: 'is more then 1000.'
+*       - WHEN OTHERS, it must be initial so write out: 'The parameter is initial!'
 ************************************************************************
-* Example:
-*  Is 1 equal 1 ? - yes
-*  Is 100 BETWEEN 5 AND 99? - no
-*  Is '123456789' contains any character of the alphabetic? - no
-*  Is '1234567890' contains only numbers ? - yes
-*-----------------------------------------------------------------------
 * What commands do you need to learn and use?
-* - CONSTANTS, DATA
-* - COND, NEW LINE
-* - Relation operators: ~ Equal: =, EQ
-*                       ~ Not Equal: <>, NE
-*                       ~ Less Then: <, LT
-*                       ~ Greater Then: >, GT
-*                       ~ Less Equal:  <=, LE
-*                       ~ Greater Equal >=, GE,
-*                       ~ BETWEEN, 
-*                       ~ IS INITIAL,
-*                       ~ IS NOT INITIAL.
-* - Relation operators for Character like data:
-*                       ~ Contains Only: CO,
-*                       ~ Contains Not Only: CN,
-*                       ~ Contains Any: CA,
-*                       ~ Contains Not Any: NA,
-*                       ~ Contains String: CS,
-*                       ~ Contains No String: NS,
-*                       ~ Covers Pattern: CP,
-*                       ~ No Pattern: NP.
-* - Boolean operators:  ~ AND,
-*                       ~ OR,
-*                       ~ EQUIV ,
-*                       ~ NOT,
-*                       ~ ( ) parenthesis.
+* - DATA, PARAMTERS, IF, CASE, strlen( character_like_variable )
 * What other information is good to know?
-* - All of the Predicate Expressions with IS:
-*     ~ operand          IS [NOT] INITIAL,
-*     ~ referance        IS [NOT] BOUND,
-*     ~ object_referance IS [NOT] INSTANCE OF class,
-*     ~ <field_symbol>   IS [NOT] ASSIGNED,
-*     ~ parameter        IS [NOT] SUPPLIED. Note: Method, function modul and subroutine paramters not selection screen paramters.
-* - IN and WHERE operand also useful.
-* 
+* - 
 * If you get stuck use ABAP Keyword Documentation [ F1 ] on the command!
 *-----------------------------------------------------------------------
 
 CONSTANTS: alphabetic TYPE string VALUE 'ABCDEFGHIJKLMNOPQRSTXYZ',
            numbers    TYPE string VALUE '0123456789'.
 
-DATA result TYPE string.
-
-PARAMETERS: operand1, operand2.
-
-result = COND #( WHEN operand1 EQ operand2 THEN 'Yes' ELSE 'No').
-
-WRITE: 'Is ', operand1, 'equal', operand2, '? ', result.
-NEW-LINE.
-
-IF operand1 NE operand2.
-  result = 'Yes'.
+* Example syntaxes: Using current user seconds as random number
+IF sy-uzeit+4(2) MOD 2 EQ 0.                  
+    WRITE: 'This number is even:', sy-uzeit+4(2).
 ELSE.
-  result = 'No'.
+    WRITE: 'This number is odd:', sy-uzeit+4(2).
 ENDIF.
 
-WRITE: 'Is ', operand1, 'not equal', operand2, '? ', result, /.
+"Or
+CASE sy-uzeit+5(1).
+ WHEN 1 OR 3 OR 5 OR 7 OR 9.
+     WRITE: 'This number is odd:', sy-uzeit+5(1).
+ WHEN OTHERS.
+     WRITE: 'This number is even:', sy-uzeit+5(1).
+ENDCASE.
 
-"Your turn! (If you get stuck, a strange but working example: result = COND #( WHEN operand1 CA numbers EQUIV operand2 BETWEEN 1 and 2 OR ( 2 LT 1 AND 5 EQ 5 )  THEN 'Yes' ELSE 'No'). WRITE result.
+* Example for strlen: variable = strlen( character_like_paramtere ).
+
+* Your turn!
+
 
 
 

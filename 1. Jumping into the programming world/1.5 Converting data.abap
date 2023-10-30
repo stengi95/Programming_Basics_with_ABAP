@@ -16,4 +16,4 @@ DATA integer TYPE i VALUE 256.
 DATA string TYPE string.
 string = 'Somebody'.
 
-* Your turn!
+* Your turn! "CONV syntax example: float_variable = CONV #( integer_variable ). 
