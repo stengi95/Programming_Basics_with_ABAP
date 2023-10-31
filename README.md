@@ -9,36 +9,32 @@ A good addition for the content: https://www.tutorialspoint.com/sap_abap/index.h
 
 Content:
 
-1. Jumping into the programming world: 
+-1. Jumping into the programming world: 
    - These tasks are created to get familiar with coding. You don't need to care what are the name of the variables.
    - Recommended SAP training(s): BC100 Unit 2.
    
-2. Operators, Branching, Loops:
+-2. Operators, Branching, Loops:
    - These tasks are still showing the basics of coding. You don't need to care what are the name of the variables.
    - Recommended SAP training(s): BC100 Unit 3, BC402 Unit 3.
 
-3. Dictionary, Internal tables, Stuctures, Field symbols, Select.
+-3. Dictionary, Internal tables, Stuctures, Field symbols, Select.
    - These tasks are showing the core of the ABAP. It is recomended follow to naming rules.
    - Recommended SAP training(s): BC430 all of the Units, BC402 Unit 4 and Unit 6.
 
-4. Selection Screen, Events, Write Output.
-   -
+-4. Selection Screen, Events, Write Output.
    - Recommended SAP training(s): BC100 Unit 4.
 
-5. Forms, Function groups and modules, classes.
+-5. Forms, Function groups and modules, classes.
    - 
    - Recommended SAP training(s): BC400, BC401 
 
-6. Debugger:
-   -
+-6. Debugger:
    - Recommended SAP training(s): BC100 Unit 6, BC403 Unit 1.
 
-7. ALV output, Inline declaration.
-   -
+-7. ALV output, Inline declaration.
    - Recommended SAP training(s): BC405
 
-8. Dynpros - Screens
-   -
+-8. Dynpros - Screens
    - Recommended SAP training(s): BC410
 
 
