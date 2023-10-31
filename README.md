@@ -2,7 +2,8 @@
 Learning Programming in Advanced Business Application Programming language.
 
 You need developer authorization and a developer key in a developer system to start.
-You can start it in SE80 or in Eclipse too. If choose Eclipse ADT, SAP training BC404 is recomended!
+You can start it in SE80 or in Eclipse ADT too.
+You can choose Eclipse ABAP Development Tools, but in this case SAP training BC404 is recomended!
 
 A good addition for the content: https://www.tutorialspoint.com/sap_abap/index.htm
 
