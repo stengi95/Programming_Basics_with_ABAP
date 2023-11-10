@@ -22,7 +22,7 @@ A good addition for the content: [tutorialspoint learning about ABAP](https://ww
    * These tasks are showing the core building blocks of the ABAP. It is recommended to follow naming rules.
    * *Recommended SAP training(s): BC430 all of the Units*
 
-## 4. Variables, Stuctures, Internal tables, Field symbols:
+## 4. Types, Variables, Stuctures, Internal tables, Field symbols:
    * These tasks are showing the core of the ABAP. It is recommended follow to naming rules.
    * *Recommended SAP training(s): BC402 Unit 1 and Unit 4 *
 
