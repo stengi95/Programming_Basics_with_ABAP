@@ -17,23 +17,32 @@ A good addition for the content: [tutorialspoint learning about ABAP](https://ww
    * These tasks are still showing the basics of coding. You don't need to care what are the name of the variables.
    * *Recommended SAP training(s): BC100 Unit 3, BC402 Unit 3.*
 
-## 3. Dictionary, Internal tables, Stuctures, Field symbols, Select:
-   * These tasks are showing the core of the ABAP. It is recomended follow to naming rules.
-   * *Recommended SAP training(s): BC430 all of the Units, BC402 Unit 4 and Unit 6.*
+## 3. Data Dictionary:
+   * Database table, View, Structure, Data element, Domain, (Search Help, Lock Object)
+   * These tasks are showing the core building blocks of the ABAP. It is recommended to follow naming rules.
+   * *Recommended SAP training(s): BC430 all of the Units*
 
-## 4. Selection Screen, Events, Write Output:
+## 4. Variables, Stuctures, Internal tables, Field symbols:
+   * These tasks are showing the core of the ABAP. It is recommended follow to naming rules.
+   * *Recommended SAP training(s): BC402 Unit 1 and Unit 4 *
+
+## 5. Selection from Database:
+   * These tasks are showing the core of the ABAP. It is recommended follow to naming rules.
+   * *Recommended SAP training(s): BC402 Unit 1. and Unit 6.*   
+
+## 6. Selection Screen, Events, Write Output:
    * *Recommended SAP training(s): BC100 Unit 4.*
 
-## 5. Forms, Function groups and modules, classes:
+## 7. Forms, Function groups and modules, classes:
    * *Recommended SAP training(s): BC400, BC401.*
 
-## 6. Debugger:
+## 8. Debugger:
    * *Recommended SAP training(s): BC100 Unit 6, BC403 Unit 1.*
 
-## 7. ALV output, Inline declaration:
+## 9. ALV output, Inline declaration:
    * *Recommended SAP training(s): BC405.*
 
-## 8. Dynpros - Screens
+## 10. Dynpros - Screens
    * *Recommended SAP training(s): BC410.*
 
 
