@@ -1,0 +1,154 @@
+0
+************************************************************************
+* Task: Basic rules
+************************************************************************
+Keep the following naming convention rules:
+1st char: Z
+2-4 chars: your identifier, eg. starting letters of your name
+5 char: '_' (fix underscore)
+6 or 6-7 chars: identifier of the created object type
+	DO: domain
+	DE: Data element
+	S: Structure
+	T: Table
+	V: View
+7 or 8 char: '_' (fix underscore)
+8- or 9- chars: descriptive name of the object
+
+E.g. Domain for production order nr: Z_xx_DO_PRODUCTIUON_ORDER_NR
+
+If ANY doubt would occur during the tasks, please, notice it, and let's talk about those later
+
+Hints:
+- When saving a new object (popup Create Object Directory Entry), click on button Local Object
+- After activating a new object, switch to another object and then back to access further options, e.g. translation
+
+
+1
+************************************************************************
+* Task: Create a domain with value table
+************************************************************************
+Create a new domain with value table (at this moment, the value table doesn't have to be entered)
+domain type CHAR, 3 chars long
+Description: Blaming text ID
+
+Value table is to be defined later
+
+
+2
+************************************************************************
+* Task: Create a domain with fixed values
+************************************************************************
+Create a new domain with fixed values
+domain type NUMC, 2 chars long
+Description: Source area of delaying
+Possible values: 	01 - Production
+					02 - Logistics
+					03 - Vendor
+					0A - Else
+
+Translation of values to German is required, the text might be the same.
+
+
+3
+************************************************************************
+* Task: Create data elements
+************************************************************************
+Create data elements for the domains defined in step 1 and 2.
+Fill in Field labels accordingly
+Translation of all texts to German is required, the text might be the same.
+
+
+4
+************************************************************************
+* Task: Create database table for blaming text ID
+************************************************************************
+Create mandant dependent database table
+Fields of the table:
+mandant
+ID of blaming text
+
+Assign this table to domain of ID of blaming text. as value table
+
+
+5 
+************************************************************************
+* Task: Create database table for blaming text
+************************************************************************
+Create mandant dependent database table for texts belonging to blaming text IDs. Language dependent.
+
+hint: for the proper structure of the table, search for an example in the system for a table and realted text table
+
+While creation, select field ID of blaming text and create a foreign key. If the field is properly entered, the foreign key has to be proposed by the system. If so, simply accept it.
+
+
+6 
+************************************************************************
+* Task: Create maintenance view
+************************************************************************
+Create maintenance view for joined tables:
+Blaming text ID
+Blaming text
+
+If foreign key in the previous step was properly set up, the 2 tables can be easily add to the view
+
+Visible fields:
+Blaming text ID
+Blaming text
+
+
+
+6
+************************************************************************
+* Task: Generate table maintenance view for ID of blaming text
+************************************************************************
+Generate table maintenance view for blaming text setup. (for the previously created view)
+
+use authorization group OBSOLETE
+A new function group has to be defined, which will contain the generated code and screens.
+Object type identifier for function group is FG, e.g. Z_xx_FG_DDICTABM
+One step maintenance, without recording routine.
+
+hint: The system will generate the function group, and other objects, be aware of being local object, then just hit Enter to go forward
+hint2: in ECC environment authorization group &NC& means no authorization check to maintian the table
+
+
+7
+************************************************************************
+* Task: Create entries into the tables above
+************************************************************************
+Using the previously created table maintenance view, create entries via TA sm30.
+E.g.
+Blame Text ID		Blame Text
+001					Dave does not find the hammer
+002					Forklift is out of gas
+A01					They mixed up the TOs again
+L02              	Key of the forklift is lost
+L03					AGV driver is on vacation
+P01					Where is wrench?
+P02					It is not my fault!
+
+Translation of all texts to German is required, the text might be the same.
+
+After entering texts and translations, check the content of the tables (e.g. via TA se16n)
+
+
+
+8
+************************************************************************
+* Task: Create assignment of blaming texts and areas
+************************************************************************
+Create a database table to assign delaying areas and blaming texts
+Create a maintenance view to fill in data into this data. 
+Visible fields are:
+Delaying area ID
+Blaming text ID
+Blaming text
+
+
+
+
+
+
+
+
