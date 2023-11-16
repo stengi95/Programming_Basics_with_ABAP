@@ -1,0 +1,24 @@
+************************************************************************
+* Task: Generate table maintenance view for ID of blaming text - version 1
+************************************************************************
+Generate table maintenance view for blaming text table created 1 step earlier.
+
+use authorization group OBSOLETE (S/4 HANA) or &NC& (ECC)
+A new function group has to be defined, which will contain the generated code and screens.
+Object type identifier for function group is FG, e.g. Z_xx_FG_DDICTABM
+One step maintenance, without recording routine.
+
+hint: The system will generate the function group, and other objects, be aware of being local object, then just hit Enter to go forward
+hint2: in ECC environment authorization group &NC& means no authorization check to maintian the table
+
+Enter several entries through this table maintenance view via TA sm30.
+E.g.
+Blame Text ID		Blame Text
+001					Dave does not find the hammer
+002					Forklift is out of gas
+A01					They mixed up the TOs again
+
+While entering check the fields of the view.
+Translation of all texts to German is required, the text might be the same.
+
+After entering texts and translations, check the content of the tables (e.g. via TA se16n)
