@@ -47,7 +47,7 @@ REPORT Z_BOOLEAN_AND_RELATION_OPERATORS
 * If you get stuck use ABAP Keyword Documentation [ F1 ] on the command!
 *-----------------------------------------------------------------------
 
-CONSTANTS: alphabetic TYPE string VALUE 'ABCDEFGHIJKLMNOPQRSTXYZ', "you also can use sy-abcde
+CONSTANTS: alphabetic TYPE string VALUE 'ABCDEFGHIJKLMNOPQRSTVWXYZ', "you also can use sy-abcde
            numbers    TYPE string VALUE '0123456789'.
 
 DATA result TYPE string.
