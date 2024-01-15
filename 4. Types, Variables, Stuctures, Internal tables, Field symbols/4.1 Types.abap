@@ -4,9 +4,13 @@ REPORT ZXY_R_BLAMING_REPORT
 * Task: Create a Report and Create Types
 ************************************************************************
 * What commands do you need to learn and use?
-* - TYPES, DATA
-*-----------------------------------------------------------------------
-" 0. Create a report with name ZXY_R_BLAMING_REPORT (Where XY is your name with 2 letter)
+* - TYPES, INCULDE, DATA, BREAKPOINT
+************************************************************************
+" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+" ! 0. Create a report with name ZXY_R_BLAMING_REPORT (Where XY is your name with 2 letter)!
+" ! This report will be used in the upcoming tasks, it will be extended a couple of times !!
+" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+************************************************************************
 " 1. Create a type with custom fields (from your modul).
 " - It can be any type of dictionary data element or structures even tables types.
 " - It can be any predefined data types like I,F,P, CHAR, STRING.
