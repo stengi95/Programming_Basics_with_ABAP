@@ -11,12 +11,12 @@ REPORT ZXY_R_BLAMING_REPORT
 " ! This report will be used in the upcoming tasks, it will be extended a couple of times !!
 " !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ************************************************************************
-" 1. Create a type with custom fields (from your modul).
+" 1. Create a type with custom fields (copy the example or use data from your module).
 " - It can be any type of dictionary data element or structures even tables types.
 " - It can be any predefined data types like I,F,P, CHAR, STRING.
-" 2. Create a type while including structure fields (from your modul).
-" 3. Create a type while including structure itself (from your modul).
-" 4. Create a type while including structure itself twice for further database check (from your modul).
+" 2. Create a type while including structure fields (copy the example or use data from your module).
+" 3. Create a type while including structure itself (copy the example or use data from your module).
+" 4. Create a type while including structure itself twice for further database check (copy the example or use data from your module).
 " + 1 Create DATA from the created types and check it in the debugger.
 ************************************************************************
 " 1. Example:
