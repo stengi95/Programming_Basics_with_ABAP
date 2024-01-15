@@ -6,12 +6,12 @@ It is recommended to follow naming rules**
 
 # Steps
 ## Data Dictionary:
-   * Database table, View, Structure (Work Area), Data element, Domain, (Search Help, Lock Object)
+   * Database table, View, Structure, Data element, Domain, (Search Help, Lock Object)
    * Creating the one of the most important bricks of ABAP to used them in programs
    * *Recommended SAP training(s): BC430 all of the Units*
 
 ## Creating Report:
-   * Types, Variables, Stuctures, Internal tables, Field symbols:
+   * Types, Variables, Stuctures (Work Areas), Internal tables, Field symbols:
    * Creating a new report and preparing for selection
    * *Recommended SAP training(s): BC402 Unit 1 and Unit 4*
 
