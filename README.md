@@ -24,7 +24,7 @@ A good addition for the content: [tutorialspoint learning about ABAP](https://ww
 
 ## 4. Types, Variables, Stuctures, Internal tables, Field symbols:
    * These tasks are showing the core of the ABAP. It is recommended follow to naming rules.
-   * *Recommended SAP training(s): BC402 Unit 1 and Unit 4 *
+   * *Recommended SAP training(s): BC402 Unit 1 and Unit 4*
 
 ## 5. Selection from Database:
    * These tasks are showing the core of the ABAP. It is recommended follow to naming rules.
